@@ -1,18 +1,30 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Visualcv />
+    <Modal @toggle-modal="toggleModal" />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import Visualcv from "@/components/Visualcv.vue";
+import Modal from "@/components/Modal.vue";
 
 export default {
-  name: 'HomeView',
+  name: "HomeView",
   components: {
-    HelloWorld
-  }
-}
+    Visualcv,
+    Modal,
+  },
+  data() {
+    return {
+      showModal: false,
+    };
+  },
+  methods: {
+    toggleModal() {
+      this.showModal = true;
+    },
+  },
+};
 </script>
