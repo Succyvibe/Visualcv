@@ -16,23 +16,38 @@
 }
 
 .card-action-list {
-  position: absolute;
+  /* position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, 100%);
   display: flex;
   gap: 15px;
   opacity: 0;
+   transition: 0.3s;  */
+
+  transition: 0.3s;
+  opacity: 0;
+}
+
+.card-actionList {
+  display: none;
+  gap: 15px;
   transition: 0.3s;
 }
 
 .card-banner:is(:hover, :focus-within) .card-action-list {
-  transform: translate(-50%, -50%);
+  transform: translateY(-50%);
   opacity: 1;
+  display: block;
+  transition: 0.3s;
+}
+
+.card-banner:is(:hover, :focus-within) .btn-dg {
+  display: flex;
+  /* opacity: 1; */
 }
 
 .card-action-list {
-  background-color: aliceblue;
   font-size: 22px;
   padding: 12px;
   border-radius: 50%;
