@@ -402,9 +402,7 @@
                         </h3>
                       </div>
 
-                      <div
-                        class="card-action-list flex pt-3 flex-col space-y-2"
-                      >
+                      <div class="card-action-list flex flex-col space-y-2">
                         <button
                           class="bg-blue-400 px-3 py-2 rounded-lg text-white w-full"
                         >
