@@ -396,7 +396,7 @@
                       </div>
                     </div> -->
                     <div class="w-full border-t-2 p-5">
-                      <div class="hover:bottom-[46% z-20]">
+                      <div class="">
                         <h3 class="font-semibold text-lg">
                           Business Development Mes...
                         </h3>

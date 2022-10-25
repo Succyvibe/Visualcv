@@ -26,7 +26,7 @@
    transition: 0.3s;  */
 
   transition: 0.3s;
-  opacity: 0;
+  display: none;
 }
 
 .card-actionList {
@@ -36,7 +36,7 @@
 }
 
 .card-banner:is(:hover, :focus-within) .card-action-list {
-  transform: translateY(-50%);
+  transform: translateY(-20%);
   opacity: 1;
   display: block;
   transition: 0.3s;
